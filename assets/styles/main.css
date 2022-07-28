@@ -18,6 +18,7 @@
 
 html {
   font-size: 67.5%;
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -26,6 +27,7 @@ h1 {
 
 h2 {
   font-size: 2.4rem;
+  margin-bottom: 24px;
 }
 
 ul {
@@ -103,7 +105,19 @@ body {
 /* * Home */
 
 main {
-  margin: 0 12px;
+  margin: 0 24px;
+}
+
+.home {
+  height: 90vh;
+}
+
+.home__title {
+  margin-bottom: 12px;
+}
+
+.home__blob {
+  max-width: 320px;
 }
 
 .home__blob-img {
@@ -120,10 +134,9 @@ main {
   display: inline-flex;
   align-items: center;
   height: 40px;
-  margin-left: 12px;
 }
 
-.button img {
+.button .arrow-right {
   transition: .3s;
 }
 
@@ -131,6 +144,143 @@ main {
   background-color: var(--highlight-alt);
 }
 
-.button:hover img {
+.button:hover .arrow-right {
   transform: translateX(4px);
+}
+
+/* * About */
+
+.about {
+  height: 90vh;
+}
+
+.about__card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.about__card {
+  height: 80px;
+  padding: 8px 6px;
+  border-radius: 8px;
+  background-color: var(--secondary-background);
+}
+
+.about__description {
+  margin-bottom: 24px;
+}
+
+/* * Skills */
+
+.skills {
+  height: 60vh;
+}
+
+.skills__card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.skills__card {
+  padding: 8px 6px;
+  border-radius: 8px;
+  background-color: var(--secondary-background);
+}
+
+.skills__card-title {
+  margin-bottom: 12px;
+}
+
+.skills__tecnologies-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.skills__tecnologies-container div {
+  display: flex;
+  align-items: center;
+}
+
+.skills__tecnologies {
+  margin-left: 4px;
+  font-size: 1.4rem;
+}
+
+/* * Portfolio  */
+
+.portfolio {
+  height: 60vh;
+}
+
+.portfolio__img-container {
+  margin-bottom: 18px;
+}
+
+.portfolio__project-title {
+  margin-bottom: 12px;
+}
+
+.portfolio__project-description {
+  font-size: 1.2rem;
+  margin-bottom: 24px;
+}
+
+.button--demo {
+  height: 32px;
+  font-size: 1.2rem;
+}
+
+/* * Contact */
+
+.contact {
+  height: 48vh;
+}
+
+.contact__container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+
+.contact__info-container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 12px;
+  align-items: center;
+  margin-left: 24px;
+}
+
+.contact__info-title {
+  font-size: 1.4rem;
+}
+
+.contact__info-text {
+  font-size: 1.2rem;
+}
+
+/** Footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 12px;
+  padding-top: 24px;
+  background-color: var(--highlight);
+  color: var(--main);
+}
+
+.footer__list {
+  display: flex;
+  column-gap: 20px;
+  margin-bottom: 36px;
+}
+
+.footer__social-media-icon {
+  width: 24px;
 }

@@ -27,20 +27,19 @@
         </li>
         <li class="header__list-item">
           <img src="./assets/img/icons/account.svg" alt="about me">
-          <a href="#">About me</a>
+          <a href="#about">About me</a>
         </li>
         <li class="header__list-item">
           <img src="./assets/img/icons/skills.svg" alt="skills">
-          <a href="#">Skills<a href="#">
-            </a>
+          <a href="#skills">Skills</a>
         </li>
         <li class="header__list-item">
           <img src="./assets/img/icons/portfolio.svg" alt="porttolio">
-          <a href="#">Portfolio</a>
+          <a href="#portfolio">Portfolio</a>
         </li>
         <li class="header__list-item">
           <img src="./assets/img/icons/contact.svg" alt="contact me">
-          <a href="#">Contact me</a>
+          <a href="#contact">Contact me</a>
         </li>
       </ul>
     </nav>
@@ -48,22 +47,163 @@
 
   <main>
     <section class="home" id="home">
-      <h1>Hi, there, I'm JhonEduard26
+      <h1 class="home__title">Hi there, I'm JhonEduard26
       </h1>
       <h2>Frontend Developer</h2>
+      <svg class="home__blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+
+        <path fill="#7F5AF0"
+          d="M48.9,-50.4C63.8,-34.1,76.4,-17,78.5,2.1C80.5,21.1,72,42.3,57.1,53.9C42.3,65.5,21.1,67.5,-1.1,68.6C-23.3,69.7,-46.5,69.7,-61.4,58.1C-76.3,46.5,-82.8,23.3,-82.6,0.2C-82.5,-23,-75.7,-45.9,-60.8,-62.2C-45.9,-78.6,-23,-88.3,-3,-85.3C17,-82.4,34.1,-66.7,48.9,-50.4Z"
+          transform="translate(100 100)" />
+      </svg>
+
+      <a class="button button--flex" href="#contact">
+        Contact me
+        <img class="arrow-right" src="./assets/img/icons/arrow-right.svg" alt="contact">
+      </a>
     </section>
-    <svg class="home__blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-
-      <path fill="#7F5AF0"
-        d="M48.9,-50.4C63.8,-34.1,76.4,-17,78.5,2.1C80.5,21.1,72,42.3,57.1,53.9C42.3,65.5,21.1,67.5,-1.1,68.6C-23.3,69.7,-46.5,69.7,-61.4,58.1C-76.3,46.5,-82.8,23.3,-82.6,0.2C-82.5,-23,-75.7,-45.9,-60.8,-62.2C-45.9,-78.6,-23,-88.3,-3,-85.3C17,-82.4,34.1,-66.7,48.9,-50.4Z"
-        transform="translate(100 100)" />
-    </svg>
-
-    <a class="button button--flex" href="#contact">
-      Contact me
-      <img src="./assets/img/icons/arrow-right.svg" alt="contact">
-    </a>
+    <section class="about" id="about">
+      <h2 class="about__title">About me</h2>
+      <div class="about__card-container">
+        <div class="about__card">Experience</div>
+        <div class="about__card">Experience</div>
+        <div class="about__card">Experience</div>
+      </div>
+      <p class="about__description">
+        Frontend developer con experiencia en tecnologias web como html, css y javascript
+      </p>
+      <a class="button button--flex" download="./assets/pdf/CV_Frontend_Developer_Jhon_Bocanegra" href="">
+        Download CV
+        <img src="./assets/img/icons/download.svg" alt="download cv">
+      </a>
+    </section>
+    <section class="skills" id="skills">
+      <h2 class="skills__title">Skills</h2>
+      <div class="skills__card-container">
+        <div class="skills__card">
+          <h4 class="skills__card-title">Frontend developer</h4>
+          <div class="skills__tecnologies-container">
+            <div>
+              <img src="./assets/img/icons/checkbox-circle.svg" alt="check icon">
+              <span class="skills__tecnologies">Html</span>
+            </div>
+            <div>
+              <img src="./assets/img/icons/checkbox-circle.svg" alt="check icon">
+              <span class="skills__tecnologies">Css</span>
+            </div>
+            <div>
+              <img src="./assets/img/icons/checkbox-circle.svg" alt="check icon">
+              <span class="skills__tecnologies">Javascript</span>
+            </div>
+            <div>
+              <img src="./assets/img/icons/checkbox-circle.svg" alt="check icon">
+              <span class="skills__tecnologies">Sass</span>
+            </div>
+            <div>
+              <img src="./assets/img/icons/checkbox-circle.svg" alt="check icon">
+              <span class="skills__tecnologies">React</span>
+            </div>
+            <div>
+              <img src="./assets/img/icons/checkbox-circle.svg" alt="check icon">
+              <span class="skills__tecnologies">Redux</span>
+            </div>
+          </div>
+        </div>
+        <div class="skills__card">
+          <h4 class="skills__card-title">Backend developer</h4>
+          <div class="skills__tecnologies-container">
+            <div>
+              <img src="./assets/img/icons/checkbox-circle.svg" alt="check icon">
+              <span class="skills__tecnologies">Node</span>
+            </div>
+            <div>
+              <img src="./assets/img/icons/checkbox-circle.svg" alt="check icon">
+              <span class="skills__tecnologies">Express</span>
+            </div>
+            <div>
+              <img src="./assets/img/icons/checkbox-circle.svg" alt="check icon">
+              <span class="skills__tecnologies">MongoDB</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="portfolio" id="portfolio">
+      <h2 class="portfolio__title">Portfolio</h2>
+      <div>
+        <figure class="portfolio__img-container">
+          <div style="width: 100%; height: 120px; background-color: purple;"></div>
+          <!-- TODO: images -->
+          <!-- <img src="" alt=""> -->
+        </figure>
+        <h4 class="portfolio__project-title">Title</h4>
+        <p class="portfolio__project-description">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, laboriosam commodi? Adipisci placeat
+          fuga doloremque voluptatem.
+        </p>
+        <a class="button button--flex button--demo" href="">
+          Demo
+          <img class="arrow-right" src="./assets/img/icons/arrow-right.svg" alt="demo">
+        </a>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <h2 class="contact__title">Contact me</h2>
+      <div class="contact__container">
+        <div class="contact__info-container">
+          <figure>
+            <img src="./assets/img/icons/email.svg" alt="email">
+          </figure>
+          <div class="contact__info">
+            <p class="contact__info-title">Email</p>
+            <a class="contact__info-text" href="mailto:jhon.bocanegra26@gmail.com">jhon.bocanegra26@gmail.com</a>
+          </div>
+        </div>
+        <div class="contact__info-container">
+          <figure>
+            <img src="./assets/img/icons/location.svg" alt="email">
+          </figure>
+          <div class="contact__info">
+            <p class="contact__info-title">Location</p>
+            <p class="contact__info-text">Colombia</p>
+          </div>
+        </div>
+        <div class="contact__info-container">
+          <figure>
+            <img src="./assets/img/icons/github.svg" alt="github">
+          </figure>
+          <div class="contact__info">
+            <p class="contact__info-title">GitHub</p>
+            <a class="contact__info-text" href="https://github.com/JhonEduard26">Jhon Eduard Bocanegra</a>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer>
+    <p>JhonEduard26</p>
+    <p>Frontend Developer</p>
+    <ul class="footer__list">
+      <li>
+        <a href="#">
+          <img class="footer__social-media-icon" src="./assets/img/icons/twitter.svg" alt="twitter">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img class="footer__social-media-icon" src="./assets/img/icons/github.svg" alt="github">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <!-- TODO: linkedin logo -->
+          <img class="footer__social-media-icon" src="./assets/img/icons/twitter.svg" alt="linkedin">
+        </a>
+      </li>
+    </ul>
+  </footer>
 
   <script src="./assets/js/main.js"></script>
 </body>
