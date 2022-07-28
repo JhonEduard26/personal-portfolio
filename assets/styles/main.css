@@ -116,12 +116,14 @@ main {
   margin-bottom: 12px;
 }
 
-.home__blob {
-  max-width: 320px;
+.home__img-container {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 24px;
 }
 
-.home__blob-img {
-  width: 128px;
+.home__img {
+  width: 100%;
 }
 
 .button {
