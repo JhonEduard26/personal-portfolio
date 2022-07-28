@@ -153,7 +153,7 @@ main {
 /* * About */
 
 .about {
-  height: 90vh;
+  margin-bottom: 64px;
 }
 
 .about__card-container {
@@ -172,12 +172,13 @@ main {
 
 .about__description {
   margin-bottom: 24px;
+  text-align: justify;
 }
 
 /* * Skills */
 
 .skills {
-  height: 60vh;
+  margin-bottom: 64px;
 }
 
 .skills__card-container {
@@ -199,7 +200,7 @@ main {
 
 .skills__tecnologies-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 12px;
 }
 
@@ -208,15 +209,10 @@ main {
   align-items: center;
 }
 
-.skills__tecnologies {
-  margin-left: 4px;
-  font-size: 1.4rem;
-}
-
 /* * Portfolio  */
 
 .portfolio {
-  height: 60vh;
+  margin-bottom: 64px;
 }
 
 .portfolio__img-container {
@@ -238,10 +234,6 @@ main {
 }
 
 /* * Contact */
-
-.contact {
-  height: 48vh;
-}
 
 .contact__container {
   display: flex;
