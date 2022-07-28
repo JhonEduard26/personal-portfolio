@@ -105,7 +105,9 @@ body {
 /* * Home */
 
 main {
-  margin: 0 24px;
+  width: 100%;
+  max-width: 720px;
+  padding: 0 24px;
 }
 
 .home {
@@ -118,12 +120,9 @@ main {
 
 .home__img-container {
   width: 100%;
-  max-width: 400px;
+  max-width: 360px;
+  margin: 0 auto;
   margin-bottom: 24px;
-}
-
-.home__img {
-  width: 100%;
 }
 
 .button {
@@ -164,15 +163,25 @@ main {
 }
 
 .about__card {
-  height: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
   padding: 8px 6px;
   border-radius: 8px;
   background-color: var(--secondary-background);
 }
 
+.about__card-subtitle {
+  font-size: 1.4rem;
+  color: var(--paragraph);
+}
+
 .about__description {
   margin-bottom: 24px;
   text-align: justify;
+  color: var(--paragraph);
 }
 
 /* * Skills */
@@ -189,7 +198,7 @@ main {
 }
 
 .skills__card {
-  padding: 8px 6px;
+  padding: 12px 24px;
   border-radius: 8px;
   background-color: var(--secondary-background);
 }
@@ -215,8 +224,17 @@ main {
   margin-bottom: 64px;
 }
 
+.portfolio__main-container {
+  margin-bottom: 24px;
+  border-bottom: 2px solid var(--secondary);
+}
+
 .portfolio__img-container {
   margin-bottom: 18px;
+}
+
+.portfolio__img-container img {
+  width: 100%;
 }
 
 .portfolio__project-title {
@@ -230,10 +248,15 @@ main {
 
 .button--demo {
   height: 32px;
+  margin-bottom: 32px;
   font-size: 1.2rem;
 }
 
 /* * Contact */
+
+.contact {
+  margin-bottom: 64px;
+}
 
 .contact__container {
   display: flex;
@@ -250,11 +273,13 @@ main {
 }
 
 .contact__info-title {
+  font-weight: 700;
   font-size: 1.4rem;
 }
 
 .contact__info-text {
   font-size: 1.2rem;
+  font-weight: 300;
 }
 
 /** Footer */

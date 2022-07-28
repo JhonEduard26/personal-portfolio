@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/styles/main.css">
+  <link rel="stylesheet" media="screen and (min-width: 768px)" href="assets/styles/desktop.css">
   <title>Frontend Developer - JhonEduard26</title>
 </head>
 
@@ -61,12 +62,19 @@
     <section class="about" id="about">
       <h2 class="about__title">About me</h2>
       <div class="about__card-container">
-        <div class="about__card">Experience</div>
-        <div class="about__card">Experience</div>
-        <div class="about__card">Experience</div>
+        <div class="about__card">
+          <img src="./assets/img/icons/code.svg" alt="experience">
+          <span class="about__card-title">Experience</span>
+          <span class="about__card-subtitle"> +1 year </span>
+        </div>
+        <div class="about__card">
+          <img src="./assets/img/icons/calendar-check.svg" alt="projects done">
+          <span class="about__card-title">Completed</span>
+          <span class="about__card-subtitle">+7 projects</span>
+        </div>
       </div>
       <p class="about__description">
-        I'm a frontend developer based in Colombia with experience in web development. I do personal projects that I
+        Frontend developer based in Colombia with experience in web development. I do personal projects that I
         upload in my github, I like continuous learning, good practices to write code, read, exercise, meditate and
         learn new things every day.
       </p>
@@ -126,22 +134,86 @@
             </div>
           </div>
         </div>
+        <div class="skills__card">
+          <h4 class="skills__card-title">Tools</h4>
+          <div class="skills__tecnologies-container">
+            <div>
+              <img src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white"
+                alt="npm logo">
+            </div>
+            <div>
+              <img src="https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E"
+                alt="vite logo">
+            </div>
+            <div>
+              <img
+                src="https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white"
+                alt="vscode logo">
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <section class="portfolio" id="portfolio">
       <h2 class="portfolio__title">Portfolio</h2>
-      <div>
+      <div class="portfolio__main-container">
         <figure class="portfolio__img-container">
-          <div style="width: 100%; height: 120px; background-color: purple;"></div>
-          <!-- TODO: images -->
-          <!-- <img src="" alt=""> -->
+          <img src="https://github.com/JhonEduard26/ecommerce-product-page/raw/main/assets/screenshots/desktop.jpeg"
+            alt="portfolio-img">
         </figure>
-        <h4 class="portfolio__project-title">Title</h4>
+        <h4 class="portfolio__project-title">Ecommerce product page</h4>
         <p class="portfolio__project-description">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, laboriosam commodi? Adipisci placeat
-          fuga doloremque voluptatem.
+          Beautiful ecommerce product page with a lightbox product gallery and cart functionality
         </p>
-        <a class="button button--flex button--demo" href="">
+        <a class="button button--flex button--demo" href="https://jhoneduard26.github.io/ecommerce-product-page/"
+          target="_blank">
+          Demo
+          <img class="arrow-right" src="./assets/img/icons/arrow-right.svg" alt="demo">
+        </a>
+      </div>
+      <div class="portfolio__main-container">
+        <figure class="portfolio__img-container">
+          <img src="https://github.com/JhonEduard26/todo-app/raw/main/src/assets/screenshots/desktop.jpeg"
+            alt="portfolio-img-2">
+        </figure>
+        <h4 class="portfolio__project-title">Todo app</h4>
+        <p class="portfolio__project-description">
+          The classic todo app with a few twists! This app includes a dark/light theme toggle and saves the todos in
+          local storage.
+        </p>
+        <a class="button button--flex button--demo" href="https://jhoneduard26.github.io/todo-app/" target="_blank">
+          Demo
+          <img class="arrow-right" src="./assets/img/icons/arrow-right.svg" alt="demo">
+        </a>
+      </div>
+      <div class="portfolio__main-container">
+        <figure class="portfolio__img-container">
+          <img
+            src="https://github.com/JhonEduard26/base-apparel-coming-soon-page/raw/main/assets/screenshots/desktop.jpeg"
+            alt="portfolio-img-3">
+        </figure>
+        <h4 class="portfolio__project-title">Base apparel coming soon page</h4>
+        <p class="portfolio__project-description">
+          Simple landing page with some interesting CSS details. Also basic form validation.
+        </p>
+        <a class="button button--flex button--demo" href="https://jhoneduard26.github.io/base-apparel-coming-soon-page/"
+          target="_blank">
+          Demo
+          <img class="arrow-right" src="./assets/img/icons/arrow-right.svg" alt="demo">
+        </a>
+      </div>
+      <div class="portfolio__main-container">
+        <figure class="portfolio__img-container">
+          <img
+            src="https://github.com/JhonEduard26/interactive-rating-component/raw/main/assets/screenshots/desktop.jpeg"
+            alt="portfolio-img-4">
+        </figure>
+        <h4 class="portfolio__project-title">Interactive rating component</h4>
+        <p class="portfolio__project-description">
+          Small project to practice handling user interactions and updating the DOM.
+        </p>
+        <a class="button button--flex button--demo" href="https://jhoneduard26.github.io/interactive-rating-component/"
+          target="_blank">
           Demo
           <img class="arrow-right" src="./assets/img/icons/arrow-right.svg" alt="demo">
         </a>
@@ -156,7 +228,8 @@
           </figure>
           <div class="contact__info">
             <p class="contact__info-title">Email</p>
-            <a class="contact__info-text" href="mailto:jhon.bocanegra26@gmail.com">jhon.bocanegra26@gmail.com</a>
+            <a class="contact__info-text" href="mailto:jhon.bocanegra26@gmail.com"
+              target="_blank">jhon.bocanegra26@gmail.com</a>
           </div>
         </div>
         <div class="contact__info-container">
@@ -174,7 +247,8 @@
           </figure>
           <div class="contact__info">
             <p class="contact__info-title">GitHub</p>
-            <a class="contact__info-text" href="https://github.com/JhonEduard26">Jhon Eduard Bocanegra</a>
+            <a class="contact__info-text" href="https://github.com/JhonEduard26" target="_blank">Jhon Eduard
+              Bocanegra</a>
             </a>
           </div>
         </div>
@@ -187,17 +261,17 @@
     <p>Frontend Developer</p>
     <ul class="footer__list">
       <li>
-        <a href="https://twitter.com/JhonBocanegra26">
+        <a href="https://twitter.com/JhonBocanegra26" target="_blank">
           <img class="footer__social-media-icon" src="./assets/img/icons/twitter.svg" alt="twitter">
         </a>
       </li>
       <li>
-        <a href="https://github.com/JhonEduard26">
+        <a href="https://github.com/JhonEduard26" target="_blank">
           <img class="footer__social-media-icon" src="./assets/img/icons/github.svg" alt="github">
         </a>
       </li>
       <li>
-        <a href="https://www.linkedin.com/in/jhon-eduard-bocanegra-ortiz/">
+        <a href="https://www.linkedin.com/in/jhon-eduard-bocanegra-ortiz/" target="_blank">
           <img class="footer__social-media-icon" src="./assets/img/icons/linkedin.svg" alt="linkedin">
         </a>
       </li>
