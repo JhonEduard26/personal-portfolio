@@ -71,7 +71,6 @@ body {
   transition: .6s ease;
   display: flex;
   flex-direction: column;
-  justify-content: stretch;
   gap: 20px;
   padding: 12px;
   padding-bottom: 0;
@@ -106,7 +105,7 @@ body {
 
 main {
   width: 100%;
-  max-width: 720px;
+  max-width: 525px;
   padding: 0 24px;
 }
 
@@ -120,9 +119,12 @@ main {
 
 .home__img-container {
   width: 100%;
-  max-width: 360px;
-  margin: 0 auto;
+  max-width: 320px;
   margin-bottom: 24px;
+}
+
+.home__img {
+  width: 100%;
 }
 
 .button {
