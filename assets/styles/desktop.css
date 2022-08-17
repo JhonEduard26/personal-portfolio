@@ -43,7 +43,6 @@ main {
   align-items: center;
   grid-template-columns: 2fr 3fr;
   column-gap: 64px;
-  height: 72vh;
 }
 
 .home__subtitle {
